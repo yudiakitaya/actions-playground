@@ -1,3 +1,9 @@
+# Actions playground
+
+This is a repo to play with basic features of Actions to implement a CI/CD pipeline. It contains a basic Next.js App
+
+## The App
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
