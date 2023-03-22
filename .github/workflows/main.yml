@@ -1,1 +1,12 @@
-Enter file contents here
+on:
+  push: 
+    branches: [ main ]
+jobs:
+  hello_world:
+    name Hello World!...
+    rus-on: ubuntu-latest
+  
+    steps:
+    
+    - name: Imprime 'Hello World!...'
+      run: echo 'Hello World!...'
