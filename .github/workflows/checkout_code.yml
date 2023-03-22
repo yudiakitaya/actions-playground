@@ -10,9 +10,9 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-      - name: Checkout repositorio
-        uses: actions/checkout@v3.3.0
+    - name: Checkout repositorio
+      uses: actions/checkout@v3.3.0
       
-       - name: Lista conteudo do runner
-         run: ls -a
+    - name: Lista conteudo do runner
+      run: ls -a
         
