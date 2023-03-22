@@ -1,0 +1,18 @@
+name: Checkout de codigo
+
+on: 
+  push:
+
+jobs:
+  
+  checkout_code:
+    name: Faz Checkout de codigo
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Checkout repositorio
+        uses: actions/checkout@v3.3.0
+      
+       - name: Lista conteudo do runner
+         run: ls -a
+        
