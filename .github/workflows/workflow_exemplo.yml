@@ -25,3 +25,13 @@ jobs:
     - run: echo Meu nome é ${{env.VARIAVEL_1}}
     - run: echo Moro em ${{env.VARIAVEL_2}}
     - run: echo Minha idade é ${{env.VARIAVEL_JOB}}
+    
+job_2:    
+  name: Job 2
+  runs-on: ubuntu-latest
+  
+  steps:
+    - run: echo Meu numero da sorte é ${{env.VARIAVEL_JOB}}
+    - run: echo Minha cidade favorita é ${{env.VARIAVEL_2}}
+  
+  
