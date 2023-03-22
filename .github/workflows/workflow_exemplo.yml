@@ -1,0 +1,27 @@
+name: workflow_exemplo
+
+on: 
+  push:
+
+env:
+  VARIAVEL_1: Felipe Yudi
+  VARIAVEL_2: São Paulo
+
+jobs:
+  
+  checkout_code:
+    name: Faz Checkout de codigo
+    runs-on: ubuntu-latest
+    env:
+      VARIAVEL_JOB: 33
+    
+    steps:
+    - name: Checkout repositorio
+      uses: actions/checkout@v3.3.0
+      
+    - name: Lista conteudo do runner
+      run: ls -a
+      
+    - run: echo Meu nome é ${{env.VARIAVEL_1}}
+    - run: echo Moro em ${{env.VARIAVEL_2}}
+    - run: echo Minha idade é ${{env.VARIAVEL_JOB}}
