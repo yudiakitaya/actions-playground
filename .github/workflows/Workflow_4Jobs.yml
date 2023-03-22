@@ -33,7 +33,7 @@ jobs:
   imprime_data_ultimo: 
     name: Imprime data atual - JOB4
     runs-on: ubuntu-latest
-    needs: imprime_data_ubuntu and imprime_data_windows and imprime_data_macos
+    needs: [imprime_data_ubuntu, imprime_data_windows, imprime_data_macos]
  
  
     steps:
