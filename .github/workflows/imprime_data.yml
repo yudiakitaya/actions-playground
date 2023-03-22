@@ -15,6 +15,7 @@ jobs:
   imprime_data_windows: 
     name: Imprime data atual - Windows
     runs-on: windows-latest
+    needs: imprime_data_ubuntu
     
     steps:
       - name: Imprime data atual 
