@@ -1,0 +1,42 @@
+name: Imprime data 4 JOBs
+
+on: 
+  push:
+  
+jobs:
+  imprime_data_ubuntu: 
+    name: Imprime data atual  - Ubuntu
+    runs-on: ubuntu-latest
+    
+    steps:
+      - name: Imprime data atual
+        run: date
+
+  imprime_data_windows: 
+    name: Imprime data atual - Windows
+    runs-on: windows-latest
+    
+    steps:
+      - name: Imprime data atual 
+        run: date
+        
+  
+  imprime_data_macos: 
+    name: Imprime data atual - MACOS
+    runs-on: macOS-latest
+        
+    steps:
+      - name: Imprime data atual 
+        run: date      
+             
+  
+  imprime_data_ultimo: 
+    name: Imprime data atual - JOB4
+    runs-on: ubuntu-latest
+    needs: imprime_data_ubuntu
+    needs: imprime_data_windows
+    needs: imprime_data_macos
+    
+    steps:
+      - name: Imprime data atual 
+        run: date            
