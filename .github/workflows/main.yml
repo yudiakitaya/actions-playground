@@ -1,9 +1,12 @@
+name: Hello World Workflow
+
 on:
   push: 
     branches: [ main ]
+
 jobs:
   hello_world:
-    name Hello World!...
+    name: Hello World!
     runs-on: ubuntu-latest
   
     steps:
