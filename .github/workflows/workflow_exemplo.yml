@@ -34,6 +34,7 @@ jobs:
     steps:
     - run: echo Meu numero da sorte é ${{env.VARIAVEL_JOB}}
     - run: echo Minha cidade favorita é ${{env.VARIAVEL_2}}
+    - run: echo Caso tenha esquecido, meu nome é ${{vars.NOME}}
     
     
     
